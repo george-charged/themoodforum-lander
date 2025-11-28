@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mood Forum | Coming Soon</title>
+    <meta name="description" content="A supportive community for mental wellness. Join our waitlist to be notified when we launch.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Transparent Logo.png" alt="The Mood Forum" class="logo">
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>A Safe Space for Your Mental Wellness Journey</h1>
+                <p class="subtitle">Join a supportive community where you can share, connect, and grow together. We're building something special — be the first to know when we launch.</p>
+            </section>
+
+            <section class="signup-section">
+                <div class="signup-card">
+                    <h2>Get Early Access</h2>
+                    <p>Register your interest and we'll notify you when The Mood Forum goes live.</p>
+                    
+                    <form id="interest-form" class="signup-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Join the Waitlist</span>
+                        </button>
+                    </form>
+                    
+                    <p class="privacy-note">We respect your privacy. No spam, ever.</p>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="feature">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Supportive Community</h3>
+                    <p>Connect with others who understand what you're going through.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Safe & Anonymous</h3>
+                    <p>Share openly in a judgement-free, secure environment.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Grow Together</h3>
+                    <p>Learn from shared experiences and discover new perspectives.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 The Mood Forum. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>You're on the list!</h2>
+            <p>Thanks for registering your interest. We'll be in touch soon.</p>
+            <button onclick="closeModal()" class="modal-btn">Got it</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
